@@ -1,0 +1,8 @@
+{
+  "name": "灵犀心语 (Linxi Heart)",
+  "description": "An AI-powered emotional healing app featuring ancient Chinese philosophers and modern visionaries as mentors in a vibrant 'New Chinese Style'.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

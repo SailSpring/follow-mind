@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif SC", serif;
+  --font-calligraphy: "ZCOOL XiaoWei", serif;
+  
+  --color-paper: #F8F6F1;
+  --color-ink: #1A1A1A;
+  --color-cinnabar: #B91C1C;
+  --color-jade: #4D7C0F;
+  --color-azure: #0EA5E9;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image: 
+    radial-gradient(rgba(0,0,0,0.02) 1px, transparent 0),
+    radial-gradient(rgba(0,0,0,0.02) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.chinese-text {
+  font-family: var(--font-serif);
+}
+
+.calligraphy {
+  font-family: var(--font-calligraphy);
+}
+
+.markdown-content p {
+  margin-bottom: 0.75rem;
+}
+.markdown-content p:last-child {
+  margin-bottom: 0;
+}
+.markdown-content ul, .markdown-content ol {
+  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+}
+.markdown-content ul {
+  list-style-type: disc;
+}
+.markdown-content ol {
+  list-style-type: decimal;
+}
+.markdown-content strong {
+  font-weight: 700;
+}
+.markdown-content blockquote {
+  border-left: 3px solid currentColor;
+  padding-left: 1rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+
+/* Custom scrollbar for an elegant look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
